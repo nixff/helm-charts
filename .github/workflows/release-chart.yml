@@ -6,8 +6,20 @@ on:
       - "v[0-9]+.[0-9]+.[0-9]+*"
 
 jobs:
+  version:
+    name: Set Version from git ref
+    runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.version.outputs.version }}
+    steps:
+      - id: version
+        run: echo "version=$(sed 's#^refs/tags/\(.*\)#\1#' <<< '${{ github.ref }}' | cut -c 2-)" >> $GITHUB_OUTPUT
+
   release:
     runs-on: ubuntu-latest
+    needs: version
+    env:
+      VERSION: ${{ needs.version.outputs.version }}
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -17,3 +29,5 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           charts_dir: charts
+          app_version: ${{ env.VERSION }}
+          chart_version: ${{ env.VERSION }}
