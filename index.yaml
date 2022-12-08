@@ -1,0 +1,17 @@
+apiVersion: v1
+entries:
+  flomesh-console:
+  - annotations:
+      charts.openshift.io/name: flomesh-console
+    apiVersion: v2
+    appVersion: 0.70.0-30
+    created: "2022-12-08T00:29:35.488715504Z"
+    description: A Helm chart to install flomesh-console on Kubernetes
+    digest: c7cb7f0caf4912fc062c18bbb1268c161241a9d5984576016c8866b2d2b5b9ee
+    kubeVersion: '>= 1.19'
+    name: flomesh-console
+    type: application
+    urls:
+    - https://flomesh-io.github.io/helm-charts/flomesh-console-0.70.0-30.tgz
+    version: 0.70.0-30
+generated: "2022-12-08T00:29:35.48805089Z"
