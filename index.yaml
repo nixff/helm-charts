@@ -5,7 +5,7 @@ entries:
       charts.openshift.io/name: flomesh-console
     apiVersion: v2
     appVersion: 0.70.0-30-ubi8
-    created: "2022-12-20T22:09:18.276932+08:00"
+    created: "2022-12-20T22:21:39.469782+08:00"
     description: A Helm chart to install flomesh-console on Kubernetes
     digest: 5b1c8194f7c932aebcc7909b629e6d821fa5ef719ee587a233275cfcb636492b
     kubeVersion: '>= 1.19'
@@ -18,7 +18,7 @@ entries:
       charts.openshift.io/name: flomesh-console
     apiVersion: v2
     appVersion: 0.70.0-30
-    created: "2022-12-20T22:09:18.277327+08:00"
+    created: "2022-12-20T22:21:39.470427+08:00"
     description: A Helm chart to install flomesh-console on Kubernetes
     digest: c7cb7f0caf4912fc062c18bbb1268c161241a9d5984576016c8866b2d2b5b9ee
     kubeVersion: '>= 1.19'
@@ -30,7 +30,18 @@ entries:
   traffic-guru:
   - apiVersion: v2
     appVersion: 0.0.7-1
-    created: "2022-12-20T22:09:18.277659+08:00"
+    created: "2022-12-20T22:21:39.471914+08:00"
+    description: A Helm chart to install traffic-guru on Kubernetes
+    digest: 4894a6b11a87a78d97cd524512a2dbaf381e1e6a4d3f0e7abcd9ddd1da5c378a
+    kubeVersion: '>= 1.19'
+    name: traffic-guru
+    type: application
+    urls:
+    - https://flomesh-io.github.io/helm-charts/traffic-guru-0.0.7.tgz
+    version: 0.0.7
+  - apiVersion: v2
+    appVersion: 0.0.7-1
+    created: "2022-12-20T22:21:39.471105+08:00"
     description: A Helm chart to install traffic-guru on Kubernetes
     digest: c09db2ef4a8f59a252b3dfe15c9e977021c6dbdd9be20689ee205830cd26062e
     kubeVersion: '>= 1.19'
@@ -39,4 +50,4 @@ entries:
     urls:
     - https://flomesh-io.github.io/helm-charts/traffic-guru-0.0.7-1.tgz
     version: 0.0.7-1
-generated: "2022-12-20T22:09:18.275354+08:00"
+generated: "2022-12-20T22:21:39.468674+08:00"
